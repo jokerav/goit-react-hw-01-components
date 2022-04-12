@@ -11,12 +11,8 @@ export default function App()  {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        textTransform: 'uppercase',
+        textTransform: 'uppercase',      
         color: '#010101',
-
-
-
-        
       }}
     >
       <Profile
