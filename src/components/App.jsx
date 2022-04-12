@@ -13,6 +13,10 @@ export default function App()  {
         fontSize: 40,
         textTransform: 'uppercase',
         color: '#010101',
+
+
+
+        
       }}
     >
       <Profile
