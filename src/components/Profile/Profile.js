@@ -7,8 +7,6 @@ export default function Profile({
   followers,
   views,
   likes,
-
-  // stats: { followers = 100, views = 2, likes = 3 },
 }) {
   return (
     <div class="profile">
