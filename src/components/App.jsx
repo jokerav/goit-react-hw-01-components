@@ -1,5 +1,7 @@
 import user from './Profile/user';
 import Profile from './Profile/Profile';
+// деструктуризируем юзера
+const { username, tag, location, avatar, stats: { followers, views, likes} } = user;
 export default function App()  {
   return (
     <div
@@ -14,14 +16,13 @@ export default function App()  {
       }}
     >
       <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        // stats={ user.stats.followers user.stats.views user.stats.likes}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={ user.stats.likes}
+        username={username}
+        tag={tag}
+        location={location}
+        avatar={avatar}
+        followers={followers}
+        views={views}
+        likes={likes}
       />
     </div>
   );
