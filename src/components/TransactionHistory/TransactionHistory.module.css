@@ -1,0 +1,17 @@
+.transactionHistory {
+  width: 600px;
+}
+.tableHeader {
+  color: #f0ffff;
+  font-size: 18px;
+  line-height: 2.5;
+  background-color: #1e90ff;
+  text-transform: uppercase;
+}
+.tableRow {
+  line-height: 2;
+  text-align: center;
+}
+.tableRow:nth-child(2n) {
+  background-color: #c0c0c0;
+}
