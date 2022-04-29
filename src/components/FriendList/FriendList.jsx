@@ -5,7 +5,7 @@ export default function FriendList({ friends }) {
   return (
     <ul className={s.friendList}>
       {friends.map(friend => (
-        <FriendListItem {...friend} />
+        <FriendListItem friend={friend} />
       ))}
     </ul>
   );
@@ -13,4 +13,10 @@ export default function FriendList({ friends }) {
 
 FriendList.propTypes = {
   friends: PropTypes.array.isRequired,
+  friend: PropTypes.shape({
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+    id: PropTypes.number.isRequired,
+  }),
 };
